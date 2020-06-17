@@ -1,2 +1,4 @@
+![Website desing](https://imgur.com/CYYoM2A)
+
 # satelite-website
- Front-End: landing page about satelit project
+
