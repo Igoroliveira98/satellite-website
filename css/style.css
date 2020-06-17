@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ========== HEADER ========== */
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #225470; */
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.header-content {
+    z-index: 2;
+    margin-top: 220px;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.btn {
+    background: #34b3a0;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+@media(max-width:960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+/* ========== DETAILS ========== */
+
+.details {
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+
+.datails-item {
+    display: flex;
+    padding: 40px;
+}
+
+.datails-item  .datails-img {
+    width: 400px;
+    flex: 0 0 400px
+
+}
+
+.datails-item  .datails-img img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.datails-item  .img-two {
+    width: 400px;
+    flex: 0 0 400px;
+    
+}
+
+.datails-item  .img-two img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.datails-item .datails-text {
+    padding-left: 20px;
+}
+
+.datails-item .datails-text h2 {
+    margin: 0;
+    padding-left: 0;
+    justify-content: flex-end;
+}
+
+.datails-item .datails-text p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: justify;
+}
+
+
+.datails-item .datails-text-two {
+    padding-right: 20px;
+}
+
+.datails-item .datails-text-two h2 {
+    margin: 0;
+    padding-right: 0;
+    color: #001f1a; 
+    text-align: right;
+}
+
+.datails-item .datails-text-two p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: justify;
+}
+
+/* ========== PEOPLES ========== */
+
+.section-peoples {
+    padding: 10em 0;
+    background-color: rgb(207, 207, 207);
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 44%;
+    transform: translateY(-50%);
+    border-radius: 2rem;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card-team {
+    width: 15rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.card-team .card-bg {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -3rem;
+    z-index: 999;
+    border: .5rem solid #ebeef8;
+}
+
+.card-team h1 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: .3rem 0;
+}
+
+.job-title {
+    color: #777;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.about-people {
+    font-size: .9rem;
+    margin: .6rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+@media screen and (min-width: 700px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-team {
+        margin: 2rem;
+    }
+}
+
+/* ========== FOUDATION ========== */
+
+.foundation {
+    background-color: #444;
+    background-image: url("../image/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position-y: center;
+    padding: 40vh 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foundation > .foundation-text {
+    flex-basis: 50%;
+    margin-left: 30px;
+}
+
+.foundation .foundation-text a {
+    margin-top: 30px;
+    flex-direction: row;
+    flex-basis: 10%;
+}
+
+.foundation > .foundation-text h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1095px) {
+    .about {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 590px) {
+    .about {
+        text-align: center;
+    }
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+    bottom: 0px;
+    width: 100%;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.container-footer .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.box .content-footer-box {
+    margin: 20px 0 0 0;
+}
+
+.center .content-center-foot .fas {
+    font-size: 1.4375rem;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content-center-foot .text {
+    font-size: 1.0325rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content-center-foot .phone {
+    margin: 10px 0;
+}
+
+.right form text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: grey;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #fff;
+    padding-left: 10px;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.right form input:focus, 
+.right form textarea:focus {
+    outline-color: #3468db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn-form {
+    margin-top: 10px;  
+}
+
+.right form .btn-form button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #45e19f;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bottom center {
+    margin-top: 90px;
+    padding: 5px;
+    font-size: 0.9375rem;
+}
+
+.bottom center span {
+    color: grey;
+}
+
+.bottom center .creator {
+    color: #45e19f;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .container-footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container-footer .box {
+        margin: 5px 0;
+
+    }
+}
