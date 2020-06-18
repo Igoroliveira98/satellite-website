@@ -1,0 +1,27 @@
+{
+  "name": "satelite-website",
+  "version": "2.0.0",
+  "description": "![Website desing](https://github.com/Igoroliveira98/satellite-website/blob/master/image/webdesing-satellite.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igoroliveira98/satellite-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igoroliveira98/satellite-website/issues"
+  },
+  "homepage": "https://github.com/Igoroliveira98/satellite-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
